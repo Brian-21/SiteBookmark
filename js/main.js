@@ -108,3 +108,9 @@ function saveBookmark(e){
 
         return true;
     }
+
+    // Set current year
+
+    const date = new Date();
+    const year = date.getFullYear();
+    document.getElementById('copyright').innerHTML = '&copy ' + year + ' Bookmarker';
